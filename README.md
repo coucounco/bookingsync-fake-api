@@ -56,6 +56,20 @@ npm run prod
 Enjoy !
 
 
+## What is done
+
+Here is the list of which endpoint are wroking atm.
+
+| Endpoint | Status |
+| ---  | --- |
+| GET /rentals | Done |
+
 ## Contributing
 
 Thank you for considering contributing to BookingSync Fake API! Contact us if you want to contribute.
+
+<style>
+table {
+    width:100%;
+}
+</style>
