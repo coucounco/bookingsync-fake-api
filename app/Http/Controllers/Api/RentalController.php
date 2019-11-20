@@ -40,7 +40,7 @@ class RentalController extends Controller
      */
     public function show(Rental $rental)
     {
-        //
+        return new RentalCollectionResource(collect([$rental]));
     }
 
     /**

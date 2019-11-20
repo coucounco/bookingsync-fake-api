@@ -60,7 +60,8 @@ Here is the list of which endpoint are wroking atm.
 
 | Endpoint | Status |
 | ---  | --- |
-| GET /rentals | Done |
+| GET /rentals | Ok |
+| GET /rentals/:rental_id | Ok |
 
 ## Contributing
 
