@@ -14,11 +14,14 @@ class RentalResource extends JsonResource
      */
     public function toArray($request)
     {
-        return array_merge(parent::toArray($request), [
-            'links' => [
-                'bedrooms' => $this->bedrooms->pluck('id'),
-                'bathrooms' => $this->bathrooms->pluck('id'),
+        return array_merge(
+            parent::toArray($request),
+            [
+                'links' => [
+                    'bedrooms' => $this->bedrooms->pluck('id'),
+                    'bathrooms' => $this->bathrooms->pluck('id'),
+                ]
             ]
-        ]);
+        );
     }
 }

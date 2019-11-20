@@ -13,13 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('guest'/*'auth:api'*/)->prefix('v3')->namespace('Api')->group(function() {
-
-
-
-    Route::get('/', function() {
-        return 'yoo';
-    });
+Route::middleware('auth:api')->prefix('v3')->namespace('Api')->group(function() {
 
     Route::apiResource('rentals', 'RentalController');
 });
