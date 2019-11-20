@@ -1,8 +1,6 @@
 # BookingSync Fake API
 
-## About
-
-This is a replication of the bookingsync API with the ability to seed fake data. This project is made for developpment purpose.
+This is a replication of the [BookingSync API v3](https://developers.bookingsync.com/reference/) with the ability to seed fake data. This project is made for developpment purpose only.
 
 ## Getting started
 
@@ -67,9 +65,3 @@ Here is the list of which endpoint are wroking atm.
 ## Contributing
 
 Thank you for considering contributing to BookingSync Fake API! Contact us if you want to contribute.
-
-<style>
-table {
-    width:100%;
-}
-</style>
