@@ -55,7 +55,7 @@ $factory->define(Rental::class, function (Faker $faker) {
             'fr' => $faker->sentence
         ],
         'rental_type' => $faker->randomElement(['apartment', 'bed-and-breakfast', 'villa', 'chalet']),
-        'reviews_average_rating' => $faker->randomFloat(2, 5),
+        'reviews_average_rating' => $faker->randomFloat(1, 0, 5),
         'reviews_count' => $faker->numberBetween(1, 200),
         'sleeps' => $faker->numberBetween(2, 10),
         'sleeps_max' => $faker->numberBetween(10, 20),
