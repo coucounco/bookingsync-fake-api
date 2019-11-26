@@ -17,4 +17,8 @@ Route::get('/', function () {
 
 Auth::routes(['register' => false]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware(['auth'])->group(function() {
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::post('/send-webhook', 'SendWebhookController')->name('webhooks.send');
+});

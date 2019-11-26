@@ -16,6 +16,12 @@ class Rental extends Model
         'website_url' => 'array',
     ];
 
+    protected $dates = [
+        'created_at',
+        'updated_at',
+        'published_at'
+    ];
+
     public function bedrooms() {
         return $this->hasMany(Bedroom::class);
     }
