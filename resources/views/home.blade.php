@@ -38,6 +38,7 @@
                             </div>
                         </dd>
                     </dl>
+                    <p>Don't forget to run <code>php artisan queue:work</code> in your app to process the webhooks.</p>
                 </div>
             </div>
         </div>
